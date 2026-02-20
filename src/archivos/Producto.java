@@ -3,6 +3,8 @@ package archivos;
 import excepciones.CapacidadMaximaException;
 import excepciones.StockInsuficienteException;
 
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
 public class Producto implements Serializable {
@@ -43,6 +45,9 @@ public class Producto implements Serializable {
         }
             stock -= cantidad;
     }
+
+
+
 
     @Override
     public String toString() {

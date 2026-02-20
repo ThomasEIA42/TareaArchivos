@@ -15,6 +15,12 @@ public class Proveedor implements Serializable {
     public int getId() {
         return id;
     }
+    public String getNombre() {
+        return nombre;
+    }
+    public String getTelofono() {
+        return telofono;
+    }
     @Override
     public String toString() {
         return "nombre: "+nombre+"\n"+"id:"+id+"\n"+"telefono:"+telofono;
